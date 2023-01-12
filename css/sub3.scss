@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body, html, header, div, nav, p ,span ,h1, h2, h3, h4, h5, h6, ul, ol, li, a, section, article, footer, main{
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background: transparent;
+}
+
+$mC : #59BB40;
+
+
+@mixin flex($a:space-around, $b:center){
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+    @content;
+}
+
+
+
+// swiper
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: flex-end;
+    
+}
+.swiper-slide{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    img {
+        margin-bottom: 40px;
+        transform: translateY(20px);
+        transition: 0.3s;
+        display: block;
+        width: 60%;
+        object-fit: cover;
+        position: absolute;
+        filter: grayscale(0.9);
+    }
+} 
+.swiper-slide-active{
+    margin: 0px;
+    img{
+        position: absolute;
+        width: 100%;
+        filter: grayscale(0);
+    }
+}
+.swiper-pagination-bullet-active-main{
+    --swiper-theme-color: #59BB40;
+}
+
+// swiper
+
+main{
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    @include flex(center, center){
+
+    }
+    .main-wrap{
+        margin-top: 100px;
+        height: 600px;
+        width: 80%;
+        position: absolute;
+        #tab-menu{
+            width: 100%;
+            .tab-ul{
+                width: 70%;
+                margin: 0 auto;
+                @include flex(space-around,flex-end){}
+                .tab-li{
+                    @include flex(){}
+                    width: 25%;
+                    &.active{
+                        .li-tag{
+                            font-size: 28px;
+                            color: #59BB40;
+                        }
+                    }
+                    .li-tag{
+                        font-size: calc(9px + 1vw);
+                        color: #222;
+                        transition: 0.5s;
+                    }
+                    .tab-content{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 50px;
+                        background: #fff;
+                        width: 100%; 
+                        padding: 20px 30px;
+                        .content-wrap{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            @include flex(){}
+                            .card{
+                                margin-right: 40px;
+                                width: 40%;
+                                height: 100%;
+                                padding: 50px 60px 20px 100px;
+                                .text-wrap{
+                                    padding-top: 30px;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: relative;
+                                    .nav-wrap{
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 6;
+                                        nav{
+                                            
+                                            z-index: 6;
+                                            h1{
+                                                padding: 15px 0;
+                                                font-size: 24px;
+                                                color: #888;
+                                                font-weight: normal;
+                                            }
+                                            h2{
+                                                padding: 15px 0;
+                                                font-size: 16px;
+                                                color: #888;
+                                                font-weight: normal;
+                                            }
+                                            h3{
+                                                padding: 15px 0;
+                                                font-size: 16px;
+                                                color: #888;
+                                                font-weight: normal;
+                                            }
+                                            h4{
+                                                padding: 15px 0;
+                                                font-size: 16px;
+                                                color: #888;
+                                                font-weight: normal;
+                                                z-index: 6;
+                                            }
+                                        }
+                                    }
+                                    .sign{
+                                        z-index: 3;
+                                        position: absolute;
+                                        bottom: -20px;
+                                        right: -80px;
+                                        width: 250px;
+                                    }
+                                }
+                                
+                            }
+                            .korean-slid{
+                                width: 50%;
+                                height: 100%;
+                                .swiper-slide{
+                                    padding-bottom: 30px;
+                                }
+                                .mySwiper1{
+                                    display: block;
+                                }
+                                .mySwiper1-1{
+                                    display: none;
+                                }
+                                .mySwiper2{
+                                    display: block;
+                                }
+                                .mySwiper2-1{
+                                    display: none;
+                                }
+                                .mySwiper3{
+                                    display: block;
+                                }
+                                .mySwiper3-1{
+                                    display: none;
+                                }
+                                .mySwiper4{
+                                    display: block;
+                                }
+                                .mySwiper4-1{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 100px;
+    bottom: 0px;
+    white-space: nowrap;
+}
+
+
+// 반응형
+
+//$tablet : 1323px;
+
+$tablet : 1300px;
+$mobile : 767px;
+
+@mixin device($min,$max){
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+}
+
+@media screen and (max-width:1600px){
+    main{
+        .main-wrap{
+            #tab-menu{
+                .tab-ul{
+                    .tab-li{
+                        &.active{
+                            .li-tag{
+                            }
+                        }
+                        .li-tag{
+                        }
+                        .tab-content{
+                            height: 450px;
+                            .content-wrap{
+                                .card{
+                                    .text-wrap{
+                                        .nav-wrap{
+                                            nav{
+                                                h1{
+                                                    padding: 12px 0;
+                                                    font-size: 21px;
+                                                }
+                                                h2{
+                                                    padding: 12px 0;
+                                                    font-size: 13px;
+                                                }
+                                                h3{
+                                                    padding: 12px 0;
+                                                    font-size: 13px;
+                                                }
+                                                h4{
+                                                    padding: 12px 0;
+                                                    font-size: 13px;
+                                                }
+                                            }
+                                        }
+                                        .sign{
+                                            right: -120px;
+                                            width: 130px;
+                                        }
+                                    }
+                                }
+                                .korean-slid{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tablet){
+    main{
+        .main-wrap{
+            width: 90%;
+            #tab-menu{
+                .tab-ul{
+                    width: 75%;
+                    .tab-li{
+                        &.active{                            
+                            .li-tag{
+                                font-size: calc(10px + 1vw);
+                            }
+                            
+                        }
+                        .li-tag{
+                            font-size: calc(9px + 1vw);
+                        }
+                        .tab-content{
+                            height: 550px;
+                            .content-wrap{
+                                @include flex(){
+                                    flex-direction: column-reverse;
+                                    flex-wrap: wrap;
+                                }
+                                .card{
+                                    width: 80%;
+                                    height: 30%;
+                                    padding: 0 10px 10px 10px;
+                                    .text-wrap{
+                                        @include flex(space-around, flex-start){}
+                                        padding: 0;
+                                        .nav-wrap{
+                                            
+                                            @include flex(){}
+                                            nav{
+                                                &:first-child{
+                                                    @include flex(flex-start,flex-start){
+                                                        flex-direction: column;
+                                                    }
+                                                }
+                                                &:last-child{
+                                                    @include flex(){
+                                                    }
+                                                }
+                                                h1{
+                                                    padding: 10px 0;
+                                                    font-size: 16px;
+                                                    font-weight: normal;
+                                                }
+                                                h2{
+                                                    padding: 10px 0;
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                }
+                                                h3{
+                                                    padding: 10px 0;
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                }
+                                                h4{
+                                                    padding: 10px 0;
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                        .sign{
+                                            width: 150px;
+                                            bottom: -30px;
+                                            right: -90px;
+                                        }
+                                    }
+                                }
+                                .korean-slid{
+                                    width: 100%;
+                                    height: 70%;
+                                    .mySwiper1{
+                                        display: none;
+                                    }
+                                    .mySwiper1-1{
+                                        display: block;
+                                    }
+                                    .mySwiper2{
+                                        display: none;
+                                    }
+                                    .mySwiper2-1{
+                                        display: block;
+                                    }
+                                    .mySwiper3{
+                                        display: none;
+                                    }
+                                    .mySwiper3-1{
+                                        display: block;
+                                    }
+                                    .mySwiper4{
+                                        display: none;
+                                    }
+                                    .mySwiper4-1{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .swiper-slide{
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 10%;
+        }
+    } 
+    .swiper-slide-active{
+        img{
+            width: calc(10% + 200px);
+        }
+    }
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+}
+
+@media screen and (max-width:$mobile){
+    main{
+        margin-top: 50px;
+        .main-wrap{
+            width: 95%;
+            #tab-menu{
+                .tab-ul{
+                    width: 95%;
+                    .tab-li{
+                        &.active{
+                            .li-tag{
+                                font-size: calc(9px + 1vw);
+                                font-weight: bold;
+                            }
+                        }
+                        .li-tag{
+                            font-size: calc(7px + 1vw);
+                        }
+                        .tab-content{
+                            height: 450px;
+                            .content-wrap{
+                                .card{
+                                    height: 25%;
+                                    .text-wrap{
+                                        .nav-wrap{
+                                            nav{
+                                                @include flex(){}
+                                                h1{
+                                                }
+                                                h2{
+                                                }
+                                                h3{
+                                                }
+                                                h4{
+                                                    font-size: 0;
+                                                }
+                                            }
+                                        }
+                                        .sign{
+                                        }
+                                    }
+                                }
+                                .korean-slid{
+                                    height: 75%;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-slide{
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 20%;
+        }
+    } 
+    .swiper-slide-active{
+        img{
+            width: calc(12% + 200px);
+        }
+    }
+}

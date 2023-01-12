@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+//reset
+body, div, h1, h2, h3, h4, h5, h6, p, span, nav, ul, li, ol, main, section, header, footer{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+@keyframes typebar {
+    50% {
+        border-color: transparent
+    }
+}
+@keyframes typing {
+    from {
+    width: 0
+    }
+}
+@keyframes openingBlur {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+}
+.blank{
+    width: 230px;
+    height: 100vh;
+}
+.opening{
+    position: relative;
+    width: calc(100% - 230px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .con{
+        width: 100%;
+        .opening-title {
+            position: absolute;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-70%);
+            h1{
+                color: #222;
+                font-weight: bold;
+                font-size: 3vw;
+                width: 21ch;
+                animation: typing 2s steps(22), typebar .5s step-end infinite alternate, openingBlur 1s 3.5s forwards;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 3px solid;
+            }
+        }
+        .opening-logo{
+            height: 80px;
+            position: relative;
+        }
+        .imgCon{
+            display: flex;
+            flex-direction: column;
+            max-width: 1440px;
+            
+            .logo-top{
+                max-width: 685px;
+                left: 50%;
+                transform: translateX(-55%) translateY(-700px);
+                top: -10%;
+                animation: opneingDown 1s 4.5s forwards;            
+            }
+            .logo-bottom{
+                max-width: 685px;
+                left: 50%;
+                transform: translateX(-55%) translateY(700px);
+                top: 110%;
+                animation: opneingUp 1s 4.5s forwards;
+            }
+        }
+        
+    }
+    
+}
+
+@keyframes opneingDown {
+    0%{
+        transform: translateX(-55%) translateY(-700px);
+    }
+    100% {
+        transform: translateX(-55%) translateY(0px);
+    }
+}
+
+@keyframes opneingUp {
+    0%{
+        transform: translateX(-55%) translateY(700px);
+    }
+    100% {
+        transform: translateX(-55%) translateY(0px);
+    }
+}
+
+$tablet : 1023px;
+$mobile : 767px;
+
+@mixin device($min,$max){
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+}
+
+@include device($mobile,$tablet){
+    
+    .blank{
+        width: 90px;
+        height: 100vh;
+    }
+    .opening{
+        width: calc(100% - 90px);
+        .con{
+            width: 100%;
+            .opening-title {
+                position: absolute;
+                left: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(-70%);
+                h1{
+                    color: #222;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    width: 21ch;
+                    animation: typing 2s steps(22), typebar .5s step-end infinite alternate, openingBlur 1s 3.5s forwards;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 3px solid;
+                }
+            }
+            .opening-logo{
+                height: 80px;
+                position: relative;
+            }
+            .imgCon{
+                display: flex;
+                flex-direction: column;
+                max-width: 1440px;
+                
+                .logo-top{
+                    width: 66.9vw;
+                    height: 7.8vw;
+                    left: 50%;
+                    transform: translateX(-55%) translateY(-700px);
+                    top: -10%;
+                    animation: opneingDown 1s 4.5s forwards;            
+                }
+                .logo-bottom{
+                    width: 66.9vw;
+                    height: 7.81vw;
+                    left: 50%;
+                    transform: translateX(-55%) translateY(700px);
+                    top: 110%;
+                    animation: opneingUp 1s 4.5s forwards;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media screen and (max-width:$mobile){
+    
+    @keyframes opneingDown {
+        0%{
+            transform: translateX(-50%) translateY(-700px);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-1vw);
+        }
+    }
+
+    @keyframes opneingUp {
+        0%{
+            transform: translateX(-50%) translateY(700px);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-1vw);
+        }
+    }
+
+    .blank{
+        width: 0;
+        height: 100vh;
+    }
+    .opening{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .con{
+            width: 100%;
+            .opening-title {
+                position: absolute;
+                left: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(-70%);
+                h1{
+                    color: #222;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    width: 21ch;
+                    animation: typing 2s steps(22), typebar .5s step-end infinite alternate, openingBlur 1s 3.5s forwards;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 3px solid;
+                }
+            }
+            .opening-logo{
+                height: 80px;
+                position: relative;
+            }
+            .imgCon{
+                display: flex;
+                flex-direction: column;
+                max-width: 1440px;
+                
+                .logo-top{
+                    width: 72vw;
+                    height: 8vw;
+                    left: 50%;
+                    transform: translateX(-50.5%) translateY(-700px);
+                    top: 0;
+                    animation: opneingDown 1s 4.5s forwards;            
+                }
+                .logo-bottom{
+                    width: 72vw;
+                    height: 8vw;
+                    left: 50%;
+                    top: 110%;
+                    animation:initial;
+                    transform: translateX(-50%) translateY(700px);
+                    animation: opneingUp 1s 4.5s forwards;
+                }
+            }
+            
+        }
+        
+    }
+}

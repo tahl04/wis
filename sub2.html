@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="./img/headerLogo.png" rel="shortcut icon" type="image/x-icon">
+    <title>What Is Soccer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
+
+
+</head>
+<body>
+    <main>
+        <div class="swiper mySwiper">
+
+            <div class="navCon">
+                <div class="swiper-pagination">
+                </div>
+                <div class="swiper-nav">
+                    <div class="processbar"></div>
+                    <div class="swiper-bar"></div>
+                    <ul>
+                        <li>Rule</li>
+                        <li>Position</li>
+                        <li>Formation</li>
+                    </ul>
+                </div>
+                <div class="processball"></div>
+            </div>
+
+            <div class="swiper-wrapper">
+                <section class="Rule swiper-slide">     
+                    <div class="neon">
+                        <div class="logo">
+                            <b>Rule</b>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="tab tab-active" data-id="tab1">
+                            <figure>
+                                <img src="./img/rule1.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>경기규칙</span><br><br>
+                                경기를 치르는 양쪽 팀은 필드에 각각 11명을 출전시킨다.<br> 
+                                골키퍼를 제외한 선수들은 스로인 상황을 제외하면 손을 사용할 수 없고,<br> 
+                                골키퍼만이 자기편 페널티 박스 안에서 제한적으로 손을 쓸 수 있다.<br><br>
+                                
+                                상대를 잡거나 미는 동작, 핸드볼, 오프사이드 등 규정에서 금하고 있는 반칙 행위 없이 손과 팔을 제외한 모든 신체부위를 이용하여 공을 상대방의 골대에 집어넣어서 득점을 해야 하며, 
+                                양팀이 성공한 득점의 개수를 비교해 승패를 결정한다.
+                            </p>                                
+                        </div>
+                        <div  class="tab" data-id="tab2">
+                            <figure>
+                                <img src="./img/rule2.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>경기시간</span><br><br>
+                                정규 시간은 90분이며 전, 후반으로 나눠 각각 45분으로 진행된다.<br><br>
+                                전후반 사이의 휴식 시간은 15분이다.<br><br> 
+                                여름철 혹서기에는 주심의 재량에 의해 전후반 각 25-30분경에 선수들에게 3분 동안 몸을 식히고 물을 마시는 쿨링 브레이크가 선언되기도 한다.<br> 당연히 쿨링 브레이크로 소모된 시간만큼 추가시간이 주어진다
+                            </p>
+                        </div>
+                        <div class="tab" data-id="tab3">
+                            <figure>
+                                <img src="./img/rule3.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>연장전</span><br><br>
+                                결선 토너먼트를 비롯해서 무승부 상황이 없는 경기의 경우,<br> 전후반 90분의 정규시간에 승부가 나지 않을 시 연장전을 진행한다.<br> 연장전은 전·후반 15분씩 총 30분간 승부를 가른다.<br><br>만약 연장전 30분 내로 승부가 나지 않는다면 승부차기로 승패를 가른다.<br> 단, 승부차기를 진행할 경우 공식 기록은 무승부로 간주된다. </p>     
+                        </div>
+                        <div  class="tab" data-id="tab4">
+                            <figure>
+                                <img src="./img/rule4.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>프리킥</span><br> 태클 등의 반칙을 하였을때 그 반칙을 한 장소에서 상대편 선수가 방해받지 않고 말 그대로 자유롭게 공을 차는 규칙.<br> 단, 선수가 공에 발을 대는 순간 상대편 또는 다른 선수가 찬 공을 건드릴 수 있다.<br><br><br><br>
+                                <span>패널티킥</span><br> 공격 상황에서 상대편이 페널티 에어리어 안에서 직접 프리킥에 해당하는 파울을 하게 되면 11m 정방향에서 자유롭게 공을 찰 수 있는 기회를 준다.
+                            </p>     
+                        </div>
+                        <div  class="tab" data-id="tab5">
+                            <figure>
+                                <img src="./img/rule5.jpg" alt="">
+                            </figure>
+                            <p> 
+                                <span>코너킥</span><br> 수비로 인해 공이 골라인 밖으로 나간 경우, 또는 골키퍼를 맞고 나간 경우 상대편이 모서리 방향에서 공을 차는 코너킥이 주어진다.<br><br>                                
+                                <span>골킥</span><br> 공격으로 인해 공이 골라인 밖으로 나간 경우는 상대편에게 골킥으로 공격기회를 넘긴다.<br> 
+                                골 에어리어 안에 공을 놓고 차며, 직접 킥이므로 볼이 다른 선수의 신체에 닿지 않고 직접 상대팀 골대로 들어가면 득점으로 인정된다.
+                                </p>     
+                        </div>
+                        <div  class="tab" data-id="tab6">
+                            <figure>
+                                <img src="./img/rule6.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>스로인</span><br>
+                                경기 중 골키퍼 외의 선수가 공을 손으로 던질 수 있는 유일한 상황으로 드로인이라고도 한다.<br> 
+                                공이 사이드라인 밖으로 나간 경우 공을 마지막으로 터치한 팀의 상대 선수가 손으로 공을 던져 경기를 재개한다.<br><br>
+                                대신 던질 때는 반드시 양손으로 던져야 하며, 훼이크를 줘도 안 되고 양 발이 바닥에 붙어있어야 하며 라인 밖에서 던져야한다.<br>
+                                그리고 던질 때 머리 위에서 손을 놓아야 하기 때문에 대부분 받기 편하게 살짝 던져준다.<br> 
+                        </div>
+                        <div  class="tab" data-id="tab7">
+                            <figure>
+                                <img src="./img/rule7.jpg" alt="">
+                            </figure>
+                            <p>
+                                <span>오프사이드</span><br>
+                                팀 동료가 상대편 최후방 수비수보다 앞서 있는 상황에서 공을 받는 상황을 말한다.<br>이 룰을 이용한 오프사이드 트랩은 현대축구에선 기본적인 수비전술이다.
+                            </p>     
+                        </div>
+                    </div>
+                    
+                    <div class="tab-menu">
+                        <ul>
+                            <li class="tab-a active-a" data-id="tab1">Rule</li>
+                            <li class="tab-a" data-id="tab2">Time</li>
+                            <li class="tab-a" data-id="tab3">Extra Time</li>
+                            <li class="tab-a" data-id="tab4">Free & Penalty kick</li>
+                            <li class="tab-a" data-id="tab5">Corner & Goal kick</li>
+                            <li class="tab-a" data-id="tab6">Throw-in</li>
+                            <li class="tab-a" data-id="tab7">Offside</li>
+                        </ul>
+                </div>
+                </section>
+                <section class="Position swiper-slide">  
+                    <div class="tab-menu">
+                            <ul>
+                                <li class="tab-b active-b" data-id="tab1">Forwards
+                                    <p>전방에 위치하여 골을 넣는 임무를 맡은 필드 플레이어로 현대축구에서는 전방 압박의 시작점으로 수비 능력 또한 요구된다.</p>
+                                </li>
+                                <li class="tab-b" data-id="tab2">MidFielder
+                                    <p>공격수와 수비수를 연결하면서 공격수로의 볼 배급을 하는 필드 플레이어로 상대 공격의 차단과 수비 가담 등 다양한 임무를 보유하고 있다.</p></li>
+                                <li class="tab-b" data-id="tab3">Depencer
+                                    <p>골키퍼를 제외하고 골문에 가장 가까이서 플레이하는 필드 플레이어로 주 임무는 상대팀 선수들이 골을 넣지 못하게 하는 것이다.</p></li>
+                                <li class="tab-b" data-id="tab4">Goalkeeper
+                                    <p>말 그대로 골(Goal)을 지키는 사람(Keeper)이라는 뜻으로 팀의 최후 방어선으로 흔히들 수문장이라고 부르기도 한다.</p></li>
+                            </ul>
+                    </div>
+                    <div class="tab-container">
+                        <div  class="tabB tab-active" data-id="tab1">
+                            <div>
+                                <img src="./img/Position1.png" alt="FORWARDS">
+                            </div>
+                            <p>
+                                <span>ST [Striker]</span><br>
+                                최전방 공격수를 말한다. <br>
+                                팀의 가장 전방에서 수비 가담은 적게 하고 공격시 골을 직접적으로 노리게 된다.<br><br>
+                                <span>SS [Second Striker]</span><br>
+                                처진 공격수라고도 한다. <br>
+                                최전방 공격수가 상대 수비를 유인할 때 골을 노리는 공격수로, 오히려 득점력은 최전방 공격수보다 높다.<br><br>
+                                <span>LW / RW [Left Wing / Right Wing]</span><br>
+                                날개처럼 좌우로 퍼져 나가면서 공격하게 된다.<br>
+                                최우선적으로 측면 돌파 능력과 크로스 능력이 요구된다.<br>
+                                수비수를 분산 시키고, 뒤로 침투하며 골을 노리기도 한다.
+                            </p>                                
+                        </div>
+                        <div  class="tabB" data-id="tab2">
+                            <div>
+                                <img src="./img/Position3.png" alt="MidFielder" style="filter: brightness(130%);">
+                            </div>
+                            <p>
+                                <span>CM [Center MidFielder]</span><br>
+                                중앙 미드필더로 공수 전반에 걸쳐 활동 영역을 가지게 되며, 볼을 소유하고 공급하며 경기를 조율하는 역할을 하게 된다.<br><br>
+                                <span>AM [Attacking Midfielder]</span><br>
+                                공격형 미드필더로 중앙에서 전방쪽에 위치하여 창조적인 패스를 통해서 골 찬스를 만들거나, 골을 노리는 역할을 하게 된다.<br><br>
+                                <span>RM / LM [MidFielder]</span><br>
+                                좌우 측면 미드필더로 윙어와 다르게 직접적인 골을 노리기 보다 공격을 풀어 나가며 수비적으로도 많이 가담한다.<br><br>
+                                <span>DM [Defensive MidFielder]</span><br>
+                                수비형 미드필더로 상대의 공격을 차단하고, 수비수가 수비를 하는데에 있어 편하도록 도움을 준다.<br>
+                                공격시에는 빌드업 과정의 첫번째가 되어 공을 전달하기도 한다.  
+                            </p>
+                        </div>
+                        <div class="tabB" data-id="tab3">
+                            <div>
+                                <img src="./img/Position2.png" alt="DEPENCER" style="filter: brightness(120%);">
+                            </div>
+                            <p>
+                                <span>CB [Center Back]</span><br>
+                                중앙 수비수로 페널티 라인 앞에서 공과 공격수를 차단하고 팀을 조율한다.<br><br>
+
+
+                                <span>SW [Sweeper]</span><br>
+                                흔히 리베로라고 불리며 센터백을 지원하고 수비를 조율하며 자유롭게 움직이며 수비한다.<br><br>
+
+
+                                <span>LB / RB [Left Back / Right Back ]</span><br>
+                                좌우 측면 수비수로 풀백 이라 부르기도 한다.<br> 
+                                공격시에는 적의 골대 근처까지 이동하여 크로스를 올리기도 하기 때문에 활동량이 많아야 한다.<br><br>
+                                
+
+
+                                <span>LWB / RWB [Wing Back]</span><br>
+                                윙어와 풀백이 합성된 포지션으로, 구조적으로 수비 뿐만이 아니라 팀의 전술에 따라 공격적인 역할까지 맡는 측면 수비수이다.<br><br>
+                            </p>
+                        </div>
+                        <div  class="tabB" data-id="tab4">
+                            <div>
+                                <img src="./img/Position4.png" alt="GOALKEEPER">
+                            </div>
+                            <p>
+                                영어론 골리(Goalie)라는 표현도 많이 쓰이는 편이며,<br> 
+                                보통 슛 스토퍼(shot stopper)라는 역할의 의미로도 자주 불린다. <br>
+                                장갑을 끼고 골을 막는 특성상 필더들과 구분되는 색상의 유니폼을 입고 있다. <br> 
+                                다른 포지션의 선수들은 기본적으로 전술 위에 움직이지만 골키퍼는 그것이 상대적으로 덜하다. 
+                            </p>     
+                        </div>
+                    </div>
+                </section>
+                <section class="Formation swiper-slide">  
+                    <div class="mainB">
+                        <div class="backS">
+                            <ul class="Words">
+                                <li class="Words-line">
+                                    <p>&nbsp;</p>
+                                    <p>원하는</p>
+                                </li>
+                                <li class="Words-line">
+                                    <p>원하는</p>
+                                    <p>포메이션을</p>
+                                </li>
+                                <li class="Words-line">
+                                    <p>포메이션을</p>
+                                    <p>직접 골라</p>
+                                </li>
+                                <li class="Words-line">
+                                    <p>직접 골라</p>
+                                    <p>나만의 팀을</p>
+                                </li>                            
+                                <li class="Words-line">
+                                    <p>나만의 팀을</p>
+                                    <p>꾸며 보세요!</p>
+                                </li>                         
+                                <li class="Words-line">
+                                    <p>꾸며보세요!</p>
+                                    <p>&nbsp;</p>
+                                </li>
+                                
+                                <span class="hoverMe"> ← hover plz!</span>
+                            </ul>
+                            <ul class="back3">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="tabBox">
+                            <div class="tab-menu">
+                                    <ul>
+                                        <li class="tab-c active-c" data-id="tab1">BACK3
+                                            <div class="">
+                                                <p>3-4-3</p>
+                                                <p>3-5-2</p>
+                                                <p>3-4-1-2</p>
+                                            </div>  
+                                        </li>
+                                        <li class="tab-c" data-id="tab2">BACK4
+                                            <div> 
+                                                <p>4-3-3</p>
+                                                <p>4-4-2</p>
+                                                <p>4-3-2-1</p>
+                                            </div>  
+                                        </li>
+                                        <li class="tab-c" data-id="tab3">BACK5
+                                            <div>  
+                                                <p>5-3-2</p>
+                                                <p>5-4-1</p>
+                                            </div>  
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="tab-container">
+                                <div  class="tabC tab-active" data-id="tab1">
+                                    <p class="Ctext">
+                                        3명의 수비수를 두는 것을 말한다.<br> 골 앞에서의 수적 우위를 높이기가 좋지만 상대방이 사이드로 치고 들어올 때는 스페이스를 쉽게 내줄 수 있기 때문에 양 사이드 미드필더들이 상대방 사이드를 막아줘야 한다.
+                                    </p>                                
+                                </div>
+                                <div  class="tabC" data-id="tab2">
+                                    <p class="Ctext">
+                                        4명의 수비수에게 지역을 분할시키며 효과적으로 공간을 커버하는 지역방어를 주로 하고 발이 빠른 좌우 풀백들이 대인 마크를 보완적으로 사용하는 포메이션이다.<br>
+                                        백4가 백3보다 수비수가 많기 때문에 일반적으론 더 수비적인 전술이라고 생각하는 사람들이 많지만, 백4는 양 풀백 자원을 공격적으로 활용하기 때문에 백3가 더 수비적인 전술이다.
+                                    </p>
+                                </div>
+                                <div class="tabC" data-id="tab3">
+                                    <p class="Ctext">
+                                        많은 수비 숫자를 둠으로써 상대방의 중앙, 사이드 돌파를 막아낼 수 있다는 장점이 있으나, 아무래도 미드필더의 숫자나 공격수의 숫자가 적어진다는 취약점이 있다.<br> 때문에 주로 약세에 있는 팀이 주로 사용한다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>     
+                    <article class="wrapper">
+                        <div class="marquee">
+                            <div class="marquee__group">
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/BVB.png" alt="">
+                                </a>
+                                <a href="https://www.acmilan.com/en" target="_blank">
+                                    <img src="./img/img_club/ACM.png" alt="">
+                                </a>
+                                <a href="https://www.juventus.com/en/" target="_blank">
+                                    <img src="./img/img_club/JUVEN.png" alt="">
+                                </a>
+                                <a href="https://www.fcbarcelona.com/en/" target="_blank">
+                                    <img src="./img/img_club/FCB.png" alt="">
+                                </a>
+                                <a href="https://kr.mancity.com/" target="_blank">
+                                    <img src="./img/img_club/MANCITY.png" alt="">
+                                </a>
+                                <a href="https://www.manutd.com/ko" target="_blank">
+                                    <img src="./img/img_club/MANU.png" alt="">
+                                </a>
+                                <a href="https://fcbayern.com/en" target="_blank">
+                                    <img src="./img/img_club/MUNCHEN.png" alt="">
+                                </a>
+                                <a href="https://www.psg.fr/" target="_blank">
+                                    <img src="./img/img_club/PARIS.png" alt="">
+                                </a>
+                                <a href="https://www.realmadrid.com/" target="_blank">
+                                    <img src="./img/img_club/REAL.png" alt="">
+                                </a>
+                            </div>
+                            <div aria-hidden="true" class="marquee__group">
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/BVB.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/ACM.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/JUVEN.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/FCB.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/MANCITY.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/MANU.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/MUNCHEN.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/PARIS.png" alt="">
+                                </a>
+                                <a href="https://www.bvb.de/" target="_blank">
+                                    <img src="./img/img_club/REAL.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </article> 
+                </section>
+            </div>
+
+        <script src="./js/sub2.js"></script>
+        
+    </main>
+
+</body>
+</html>
